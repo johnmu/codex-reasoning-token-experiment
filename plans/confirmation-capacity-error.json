@@ -1,0 +1,26 @@
+{
+  "recorded_utc": "2026-10-06T05:12:58.168499+00:00",
+  "task": "portfolio",
+  "number": 101,
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "repeat": 8,
+  "auth": "chatgpt",
+  "status": "failed",
+  "identical_request_verified": true,
+  "sent_body_sha256": "7c21f5cfef1d525e59910774316b1580ca87590826520ce0c1dd74a5f7b62bee",
+  "server_error": {
+    "code": "server_is_overloaded",
+    "message": "Our servers are currently overloaded. Please try again later."
+  },
+  "native_error_code": "serverOverloaded",
+  "answer": null,
+  "reasoning_tokens": null,
+  "source_log_sha256": {
+    "wire": "c8e5fe788d40c8a4293bc1d4bc31ae5789a9925125e59e1da8da09736207f996",
+    "native": "84650a35d58b8f31085be6b3fa8aad74cd4c59e77b452424b9136cddf13f254e"
+  },
+  "original_manifest_sha256": "92b31bf77e06a1af2aefbb42acc272b41ffb8433b00ccc3a86e15ddf0f45d4be",
+  "original_runs_sha256": "ae63827913f42fd3bf27cc7473107b0071c03ed86247ab2acf3e18aec1cbf172",
+  "manual_retry": "One retry of scheduled response 101, after preserving and inspecting the failure. No interim significance analysis."
+}
