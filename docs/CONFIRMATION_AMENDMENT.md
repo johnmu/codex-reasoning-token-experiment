@@ -25,3 +25,18 @@ the original schedule.
 The prompts, requested models, efforts, client binary, pair order, sample size
 of completed responses and statistical corrections remain as recorded. There
 is no automatic retry loop. A further error will stop collection for inspection.
+
+## Second capacity error
+
+The manual retry of response 101 completed. Five continuation responses then
+completed before scheduled response 106 (portfolio, Luna Low, ChatGPT sign-in)
+returned the same `server_is_overloaded` error. That continuation also stopped
+and is preserved unchanged. The first 105 completed responses will be retained,
+and another manual continuation will start at scheduled response 106.
+
+The [runtime-error ledger](../plans/confirmation-runtime-errors.json) records
+every capacity failure and evidence hash. Subsequent continuations preserve
+earlier segments and the original schedule. The final attempt count will include
+all these failures, and the statistical report will disclose the interruptions.
+The additional runtime deviations limit how strongly this follow-up can be
+described as confirmation of the original findings.
