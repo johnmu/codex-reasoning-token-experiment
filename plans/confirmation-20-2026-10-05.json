@@ -1,0 +1,2966 @@
+{
+  "created_utc": "2026-10-06T04:54:50.724687+00:00",
+  "baseline_commit": "eb6c037ab3ea0579640bbce3701e2978b745a798",
+  "baseline_records_sha256": "42920c7ce818f24473f7a6dfc1b89976bf0d656f5f5c8e01b07b49094e94e9a3",
+  "codex_version": "codex-cli 0.160.0",
+  "codex_sha256": "6b582e8813ce7e8ed4c52814ee5cf230dba647bf2292df747a4003f2657ef201",
+  "responses": 480,
+  "api_calls": 240,
+  "experiments": [
+    {
+      "settings": {
+        "models": [
+          "gpt-6-luna",
+          "gpt-6.1-sol"
+        ],
+        "efforts": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "random_seed": 61206,
+        "timeout_seconds": 900,
+        "repeats": 20,
+        "identical": true,
+        "capture": true,
+        "benchmark": "portfolio"
+      },
+      "schedule": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 14,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 14,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 12,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 12,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 20,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 20,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 6,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 6,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 19,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 19,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 6,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 6,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 8,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 8,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 7,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 7,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 13,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 13,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 20,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 20,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 5,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 5,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 2,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 2,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 10,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 10,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 1,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 1,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 17,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 17,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 14,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 14,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 15,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 15,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 15,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 15,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 2,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 2,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 5,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 5,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 17,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 17,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 4,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 4,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 18,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 18,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 9,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 9,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 13,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 13,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 14,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 14,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 9,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 9,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 17,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 17,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 16,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 16,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 3,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 3,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 20,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 20,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 11,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 11,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 10,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 10,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 6,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 6,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 20,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 20,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 15,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 15,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 4,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 4,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 13,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 13,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 10,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 10,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 7,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 7,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 4,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 4,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 5,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 5,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 13,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 13,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 3,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 3,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 17,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 17,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 11,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 11,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 3,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 3,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 7,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 7,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 15,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 15,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 18,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 18,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 8,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 8,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 3,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 3,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 16,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 16,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 7,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 7,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 12,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 12,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 12,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 12,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 9,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 9,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 19,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 19,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 13,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 13,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 17,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 17,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 4,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 4,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 1,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 1,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 1,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 1,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 14,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 14,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 8,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 8,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 14,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 14,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 8,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 8,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 5,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 5,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 3,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 3,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 3,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 3,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 11,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 11,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 19,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 19,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 6,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 6,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 10,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 10,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 12,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 12,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 2,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 2,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 10,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 10,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 19,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 19,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 9,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 9,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 5,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 5,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 11,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 11,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 16,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 16,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 14,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 14,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 2,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 2,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 17,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 17,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 10,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 10,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 16,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 16,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 6,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 6,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 2,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 2,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 18,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 18,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 7,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 7,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 20,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 20,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 1,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 1,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 18,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 18,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 20,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 20,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 19,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 19,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 18,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 18,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 11,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 11,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 18,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 18,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 16,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 16,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 8,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 8,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 13,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 13,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 19,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 19,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 8,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 8,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 15,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 15,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 4,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 4,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 1,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 1,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 12,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 12,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 9,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 9,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 4,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 4,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 2,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 2,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 11,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 11,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 16,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 16,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 5,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 5,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 7,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 7,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 6,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 6,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 12,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 12,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 9,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 9,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 1,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 1,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 15,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 15,
+          "auth": "chatgpt"
+        }
+      ],
+      "request_body_sha256": {
+        "request-gpt-6-luna-low.json": "eb8259d100a91a11c15bad5530b5a874b89d632fa11b3fbd12f6f9816da41c15",
+        "request-gpt-6-luna-medium.json": "7c21f5cfef1d525e59910774316b1580ca87590826520ce0c1dd74a5f7b62bee",
+        "request-gpt-6-luna-high.json": "49373a4f3f198b0deef6fc0a14ae20eeaf6c3bb83c743caa9e84bd6cfe9fd529",
+        "request-gpt-6.1-sol-low.json": "a5c9753670b50fb73bfdb3cc8227fb0bdceb04b0eb7eb7254ec8eb3c8c7b4faa",
+        "request-gpt-6.1-sol-medium.json": "7095c9c751f3e47fc0593f2a26a6ef0f5279b840de4fcfb067b49ada657b3959",
+        "request-gpt-6.1-sol-high.json": "7cef0a52213724e6fcc2460e5496a75ad859316e04b0b6e3486485e9fc02831e"
+      }
+    },
+    {
+      "settings": {
+        "models": [
+          "gpt-6-luna",
+          "gpt-6.1-sol"
+        ],
+        "efforts": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "random_seed": 61206,
+        "timeout_seconds": 900,
+        "repeats": 20,
+        "identical": true,
+        "capture": true,
+        "benchmark": "bookstore"
+      },
+      "schedule": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 14,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 14,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 12,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 12,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 20,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 20,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 6,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 6,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 19,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 19,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 6,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 6,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 8,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 8,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 7,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 7,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 13,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 13,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 20,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 20,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 5,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 5,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 2,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 2,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 10,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 10,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 1,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 1,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 17,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 17,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 14,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 14,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 15,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 15,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 15,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 15,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 2,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 2,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 5,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 5,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 17,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 17,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 4,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 4,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 18,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 18,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 9,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 9,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 13,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 13,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 14,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 14,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 9,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 9,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 17,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 17,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 16,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 16,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 3,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 3,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 20,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 20,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 11,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 11,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 10,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 10,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 6,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 6,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 20,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 20,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 15,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 15,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 4,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 4,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 13,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 13,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 10,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 10,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 7,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 7,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 4,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 4,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 5,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 5,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 13,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 13,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 3,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 3,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 17,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 17,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 11,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 11,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 3,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 3,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 7,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 7,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 15,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 15,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 18,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 18,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 8,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 8,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 3,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 3,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 16,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 16,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 7,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 7,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 12,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 12,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 12,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 12,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 9,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 9,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 19,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 19,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 13,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 13,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 17,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 17,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 4,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 4,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 1,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 1,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 1,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 1,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 14,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 14,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 8,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 8,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 14,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 14,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 8,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 8,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 5,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 5,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 3,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 3,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 3,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 3,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 11,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 11,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 19,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 19,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 6,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 6,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 10,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 10,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 12,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 12,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 2,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 2,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 10,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 10,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 19,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 19,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 9,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 9,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 5,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 5,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 11,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 11,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 16,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 16,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 14,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 14,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 2,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 2,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 17,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 17,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 10,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 10,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 16,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 16,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 6,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 6,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 2,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 2,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 18,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 18,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 7,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 7,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 20,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 20,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 1,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 1,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 18,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 18,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 20,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 20,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 19,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 19,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 18,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 18,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 11,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 11,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 18,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 18,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 16,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 16,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 8,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 8,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 13,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 13,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 19,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 19,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 8,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 8,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 15,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 15,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 4,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 4,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 1,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "repeat": 1,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 12,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "repeat": 12,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 9,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 9,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 4,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 4,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 2,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 2,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 11,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 11,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 16,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 16,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 5,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "repeat": 5,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 7,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 7,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 6,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 6,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 12,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 12,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 9,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "repeat": 9,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 1,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "repeat": 1,
+          "auth": "chatgpt"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 15,
+          "auth": "api"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "repeat": 15,
+          "auth": "chatgpt"
+        }
+      ],
+      "request_body_sha256": {
+        "request-gpt-6-luna-low.json": "b9f6c07ffd88f7b6d2bf27dc0fea5e486be7df0a7bbabe05e107ce3fe8e29a90",
+        "request-gpt-6-luna-medium.json": "c335e45dfd33348c2730557acad47a9d33b53e6384c78c10df2922e9cd46a566",
+        "request-gpt-6-luna-high.json": "cbe86f61d5c2ed8c828b0b976201d743d2c39ab34379b8f4388d3d9dc54a9cb5",
+        "request-gpt-6.1-sol-low.json": "8700544b2d30e35b7a923a86f3b2b3f006c46fadf65d5e39d2444d395ced9028",
+        "request-gpt-6.1-sol-medium.json": "582b0ba02661e5153868cfee1a72c74d1678539017738eea2a0fade9a57ef4c1",
+        "request-gpt-6.1-sol-high.json": "c9666d7f334ee227a645305cef06640d653a4351b4cbd6c880c5de321145edc7"
+      }
+    }
+  ],
+  "primary_analysis": {
+    "data": "new batch only",
+    "test": "exact two-sided paired randomization respecting task-level order balance",
+    "comparisons": 36,
+    "correction": "Holm",
+    "looks": 1,
+    "alpha": 0.05
+  },
+  "secondary_analysis": {
+    "data": "original two batches plus new batch",
+    "metric": "correct",
+    "test": "exact two-sided paired randomization with three independent task-level order-balance blocks",
+    "correction": "Bonferroni 36 outcomes times 3 significance looks",
+    "alpha": 0.05,
+    "interpretation": "exploratory"
+  },
+  "stopping_rule": "Complete the fixed schedule regardless of interim answers. Stop on audit/runtime errors; retain all attempts; no automatic retries or sample-size extension."
+}
