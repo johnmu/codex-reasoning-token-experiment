@@ -2,6 +2,7 @@
 import json
 import math
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -9,9 +10,53 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from analyze_followup import accuracy_distribution, combined_p_value, pooled_accuracy
 from common import ROOT
 from paired_statistics import distribution
+from continue_followup import progress
 
 
 class FollowupTests(unittest.TestCase):
+    def make_segments(self, root):
+        original, resumed = root / 'original', root / 'resumed'
+        jobs = [{'model': 'gpt-6-luna', 'effort': 'low', 'repeat': repeat, 'auth': auth}
+                for repeat in [1, 2] for auth in ['api', 'chatgpt']]
+        settings = {'benchmark': 'portfolio'}
+        original.mkdir()
+        (original / 'plan.json').write_text(json.dumps([{'settings': settings, 'schedule': jobs}]))
+        for base, schedule in [(original, jobs), (resumed, jobs[3:])]:
+            folder = base / 'portfolio'
+            folder.mkdir(parents=True)
+            (folder / 'manifest.json').write_text(json.dumps({'settings': settings, 'schedule': schedule}))
+            rows = [{**job, 'number': number, 'eligible': True, 'status': 'completed', 'correct': False}
+                    for number, job in enumerate(schedule, 1)]
+            if base == original:
+                rows[-1].update(eligible=False, status='failed', identical_request_verified=True, sent_body_sha256='fixture')
+                error = {'body': {'type': 'response.failed', 'response': {'error': {'code': 'server_is_overloaded'}}}}
+                (folder / '04-wire.jsonl').write_text(json.dumps(error) + '\n')
+                (folder / '04-events.jsonl').write_text('{}\n')
+            (folder / 'runs.json').write_text(json.dumps(rows))
+        return original, resumed
+
+    def test_segment_resume_retains_incorrect_answers_and_partial_pairs(self):
+        with tempfile.TemporaryDirectory() as name:
+            original, resumed = self.make_segments(Path(name))
+            before = (original / 'portfolio/runs.json').read_bytes()
+            plans, completed, failures = progress(original, [resumed])
+            self.assertEqual(len(completed['portfolio']), 4)
+            self.assertTrue(all(not row['correct'] for _, _, row in completed['portfolio']))
+            self.assertEqual(failures[0]['scheduled_number'], 4)
+            self.assertEqual(failures[0]['reasoning_tokens'], None)
+            self.assertEqual(completed['portfolio'][-1][2]['number'], 1)
+            self.assertEqual((original / 'portfolio/runs.json').read_bytes(), before)
+
+    def test_reordered_resume_is_rejected(self):
+        with tempfile.TemporaryDirectory() as name:
+            original, resumed = self.make_segments(Path(name))
+            path = resumed / 'portfolio/manifest.json'
+            manifest = json.loads(path.read_text())
+            manifest['schedule'][0]['auth'] = 'api'
+            path.write_text(json.dumps(manifest))
+            with self.assertRaises(AssertionError):
+                progress(original, [resumed])
+
     def test_matches_exhaustive_first_second_assignments(self):
         pairs = [{'api': {'number': 2*i + (1 if i % 2 else 2), 'correct': a},
                   'chatgpt': {'number': 2*i + (2 if i % 2 else 1), 'correct': b}}
