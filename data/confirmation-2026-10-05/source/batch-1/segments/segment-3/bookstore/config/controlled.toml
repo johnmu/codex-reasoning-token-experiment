@@ -1,0 +1,33 @@
+# Identical config for both isolated credential homes. Pin the desktop backend.
+cli_auth_credentials_store = "keyring"
+web_search = "disabled"
+personality = "none"
+model_reasoning_summary = "none"
+project_doc_max_bytes = 0
+history.persistence = "none"
+
+[features]
+view_image = false
+image_generation = false
+memories = false
+chronicle = false
+multi_agent = false
+multi_agent_v2 = false
+goals = false
+shell_tool = false
+code_mode = false
+code_mode_host = false
+apps = false
+plugins = false
+remote_plugin = false
+hooks = false
+browser_use = false
+browser_use_external = false
+computer_use = false
+in_app_browser = false
+sleep_tool = false
+skill_search = false
+skip_host_skill_discovery = true
+
+[analytics]
+enabled = false

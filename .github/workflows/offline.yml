@@ -17,3 +17,5 @@ jobs:
       - run: python -B scripts/check_public.py
       - run: python -B scripts/public_audit.py
       - run: python -B scripts/analyze.py --output reports/generated
+      - run: python -B scripts/public_audit.py data/confirmation-2026-10-05
+      - run: python -B scripts/analyze_followup.py data/confirmation-2026-10-05 --output reports/generated/followup

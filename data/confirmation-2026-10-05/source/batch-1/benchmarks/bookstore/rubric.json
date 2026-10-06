@@ -1,0 +1,16 @@
+{
+  "expected_decisions": {
+    "cause": "server_check_send_race",
+    "trigger": "shorter_client_timeout",
+    "mitigation": "serialize_same_order_requests",
+    "test": "replay_overlapping_requests_before_after_serialization"
+  },
+  "scoring": "One point per matching decision, for a score of 0 to 4. Correct means all four match. Missing, wrong, or malformed decisions earn no point. A non-object or invalid JSON answer scores zero. Explanation prose is retained for human review and is not automatically graded.",
+  "rationale": {
+    "cause": "Both concurrent handlers can pass the same unsent check before either records completion. Duplicate sends occur with either app version, and the provider receives two requests. The fault is in the server's check/send/record sequence.",
+    "trigger": "The shorter timeout increases retries that can overlap. Changing the timeout reproduces or reduces the problem independently of app version.",
+    "mitigation": "Serialize handling of the same order through the existing send-and-record sequence so a second handler checks the recorded state after the first finishes. This targets the observed race while retaining email service.",
+    "test": "Replay identical overlapping requests under otherwise matched conditions before and after serialization, checking actual provider send counts. This tests the proposed mechanism directly.",
+    "mitigation_caveat": "Serialization must cover every worker handling that order and preserve failure/retry recovery. It may add waiting and does not by itself prove delivery is exactly once after a crash. This caveat is qualitative and is not part of the automatic score."
+  }
+}

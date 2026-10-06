@@ -14,8 +14,8 @@ original schedule. The first 100 successful responses will not be rerun.
 No interim correctness totals or p-values were inspected to make this decision.
 
 This is a runtime deviation from the [original fixed plan](CONFIRMATION_PLAN.md).
-If collection completes, the dataset will contain 480 completed responses from
-481 attempts, including one separately reported subscription-route failure.
+Collection completed with 480 responses from 482 attempts, including two
+separately reported subscription-route failures.
 The planned statistical tests will describe **completed, audited responses**.
 They will not measure overall success per attempt or establish equal availability
 between access methods. The manual retry and collection interruption must be

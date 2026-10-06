@@ -92,7 +92,7 @@ def analyze(data, output, batch=None, looks=None):
               "[Recorded Standard pricing](https://developers.openai.com/api/docs/pricing): Luna $0.10/$0.50 and Sol 6.1 $2/$10 per million input/output tokens. "
               "This is not a verified invoice.", "", "## Statistical comparisons", "",
               "Raw p-values and corrections are exploratory for the original and pooled study. The extension rules were frozen before its collection. "
-              "The factor of two conservatively accounts for examining significance at ten and twenty pairs. "
+              f"This analysis uses a significance-look factor of {looks}. "
               "Randomization weights retain the first/second order balance separately within each task/batch. "
               "The interpretation assumes no carryover between adjacent calls. Nonsignificance does not establish equivalence. "
               "These two prompts do not establish a general capability difference or a hidden server cause.", ""]

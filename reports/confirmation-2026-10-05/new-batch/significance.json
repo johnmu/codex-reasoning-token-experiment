@@ -1,0 +1,431 @@
+{
+  "metrics": [
+    "reasoning_tokens",
+    "correct",
+    "seconds"
+  ],
+  "conditions": 12,
+  "looks": 1,
+  "results": [
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "reasoning_tokens": {
+        "api_mean": 248.5,
+        "chatgpt_mean": 189.85,
+        "difference": 58.65,
+        "p": 0.011891227359298559,
+        "holm_metric": 0.08323859151508992,
+        "holm_metric_looks": 0.08323859151508992,
+        "holm_all": 0.297280683982464,
+        "holm_all_looks": 0.297280683982464
+      },
+      "correct": {
+        "api_mean": 0.95,
+        "chatgpt_mean": 0.6,
+        "difference": 0.35,
+        "p": 0.015476424683585809,
+        "holm_metric": 0.1857170962030297,
+        "holm_metric_looks": 0.1857170962030297,
+        "holm_all": 0.3714341924060594,
+        "holm_all_looks": 0.3714341924060594
+      },
+      "seconds": {
+        "api_mean": 5.473219631292158,
+        "chatgpt_mean": 5.881765089544933,
+        "difference": -0.40854545825277455,
+        "p": 0.5683553887283069,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "reasoning_tokens": {
+        "api_mean": 294.75,
+        "chatgpt_mean": 231.95,
+        "difference": 62.8,
+        "p": 0.02300503935930291,
+        "holm_metric": 0.13803023615581744,
+        "holm_metric_looks": 0.13803023615581744,
+        "holm_all": 0.5291159052639669,
+        "holm_all_looks": 0.5291159052639669
+      },
+      "correct": {
+        "api_mean": 0.9,
+        "chatgpt_mean": 0.7,
+        "difference": 0.2,
+        "p": 0.2902439810979294,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 5.5333443146490024,
+        "chatgpt_mean": 7.997671364666894,
+        "difference": -2.4643270500178915,
+        "p": 0.008508716123972361,
+        "holm_metric": 0.05956101286780653,
+        "holm_metric_looks": 0.05956101286780653,
+        "holm_all": 0.2212266192232814,
+        "holm_all_looks": 0.2212266192232814
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "reasoning_tokens": {
+        "api_mean": 311.5,
+        "chatgpt_mean": 261.65,
+        "difference": 49.85,
+        "p": 0.14270792693734058,
+        "holm_metric": 0.7135396346867029,
+        "holm_metric_looks": 0.7135396346867029,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "correct": {
+        "api_mean": 0.65,
+        "chatgpt_mean": 0.9,
+        "difference": -0.25,
+        "p": 0.18151537407812446,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 5.578731691685971,
+        "chatgpt_mean": 8.251606916700258,
+        "difference": -2.672875225014286,
+        "p": 0.006744299070574529,
+        "holm_metric": 0.053954392564596235,
+        "holm_metric_looks": 0.053954392564596235,
+        "holm_all": 0.1820960749055123,
+        "holm_all_looks": 0.1820960749055123
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "reasoning_tokens": {
+        "api_mean": 103.1,
+        "chatgpt_mean": 101.6,
+        "difference": 1.5,
+        "p": 0.5770325237232466,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 5.44632703755633,
+        "chatgpt_mean": 5.517658439499792,
+        "difference": -0.07133140194346196,
+        "p": 0.7043272769896819,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "reasoning_tokens": {
+        "api_mean": 109.9,
+        "chatgpt_mean": 106.75,
+        "difference": 3.15,
+        "p": 0.2653233741413846,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 4.45570668541477,
+        "chatgpt_mean": 5.424586531153182,
+        "difference": -0.9688798457384109,
+        "p": 0.0012455608215266025,
+        "holm_metric": 0.01494672985831923,
+        "holm_metric_looks": 0.01494672985831923,
+        "holm_all": 0.03985794628885128,
+        "holm_all_looks": 0.03985794628885128
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "reasoning_tokens": {
+        "api_mean": 143.25,
+        "chatgpt_mean": 127.65,
+        "difference": 15.6,
+        "p": 0.0017142522732186052,
+        "holm_metric": 0.013714018185748841,
+        "holm_metric_looks": 0.013714018185748841,
+        "holm_all": 0.05314182046977676,
+        "holm_all_looks": 0.05314182046977676
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 5.869577922864119,
+        "chatgpt_mean": 6.003334089549026,
+        "difference": -0.13375616668490692,
+        "p": 0.665850148188497,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "reasoning_tokens": {
+        "api_mean": 61.6,
+        "chatgpt_mean": 0,
+        "difference": 61.6,
+        "p": 8.272198559479419e-06,
+        "holm_metric": 9.099418415427361e-05,
+        "holm_metric_looks": 9.099418415427361e-05,
+        "holm_all": 0.00028952694958177966,
+        "holm_all_looks": 0.00028952694958177966
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 3.509911618818296,
+        "chatgpt_mean": 3.6083051854628136,
+        "difference": -0.0983935666445177,
+        "p": 0.5900211560064117,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "reasoning_tokens": {
+        "api_mean": 93.55,
+        "chatgpt_mean": 0,
+        "difference": 93.55,
+        "p": 2.088525378878467e-06,
+        "holm_metric": 2.5062304546541605e-05,
+        "holm_metric_looks": 2.5062304546541605e-05,
+        "holm_all": 7.518691363962482e-05,
+        "holm_all_looks": 7.518691363962482e-05
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 3.144155604188563,
+        "chatgpt_mean": 4.06973417075933,
+        "difference": -0.9255785665707663,
+        "p": 0.002541608041833473,
+        "holm_metric": 0.027820878887071496,
+        "holm_metric_looks": 0.027820878887071496,
+        "holm_all": 0.07587512423746771,
+        "holm_all_looks": 0.07587512423746771
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "reasoning_tokens": {
+        "api_mean": 158,
+        "chatgpt_mean": 87.2,
+        "difference": 70.8,
+        "p": 1.0042562455300986e-05,
+        "holm_metric": 0.00010042562455300986,
+        "holm_metric_looks": 0.00010042562455300986,
+        "holm_all": 0.0003414471234802335,
+        "holm_all_looks": 0.0003414471234802335
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 4.034125272894744,
+        "chatgpt_mean": 5.324011245847214,
+        "difference": -1.28988597295247,
+        "p": 0.0037781322579235246,
+        "holm_metric": 0.03400319032131172,
+        "holm_metric_looks": 0.03400319032131172,
+        "holm_all": 0.10578770322185868,
+        "holm_all_looks": 0.10578770322185868
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "reasoning_tokens": {
+        "api_mean": 0,
+        "chatgpt_mean": 0,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 4.985914806346409,
+        "chatgpt_mean": 5.0560404771124015,
+        "difference": -0.07012567076599226,
+        "p": 0.6689783027341777,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "reasoning_tokens": {
+        "api_mean": 4.15,
+        "chatgpt_mean": 0,
+        "difference": 4.15,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 4.17925960412831,
+        "chatgpt_mean": 5.059690599894384,
+        "difference": -0.8804309957660734,
+        "p": 0.0025291708079155906,
+        "holm_metric": 0.027820878887071496,
+        "holm_metric_looks": 0.027820878887071496,
+        "holm_all": 0.07587512423746771,
+        "holm_all_looks": 0.07587512423746771
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "reasoning_tokens": {
+        "api_mean": 206.6,
+        "chatgpt_mean": 142.15,
+        "difference": 64.45,
+        "p": 0.00021423531312305676,
+        "holm_metric": 0.0019281178181075108,
+        "holm_metric_looks": 0.0019281178181075108,
+        "holm_all": 0.007069765333060874,
+        "holm_all_looks": 0.007069765333060874
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 9.28391478965641,
+        "chatgpt_mean": 8.925806004053447,
+        "difference": 0.3581087856029626,
+        "p": 0.39755400651338146,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      }
+    }
+  ]
+}

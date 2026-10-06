@@ -1,0 +1,50 @@
+{
+  "failures": [
+    {
+      "task": "portfolio",
+      "scheduled_number": 101,
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "repeat": 8,
+      "auth": "chatgpt",
+      "status": "failed",
+      "server_error": {
+        "code": "server_is_overloaded",
+        "message": "Our servers are currently overloaded. Please try again later."
+      },
+      "answer": null,
+      "reasoning_tokens": null,
+      "sent_body_sha256": "7c21f5cfef1d525e59910774316b1580ca87590826520ce0c1dd74a5f7b62bee",
+      "source_log_sha256": {
+        "wire": "c8e5fe788d40c8a4293bc1d4bc31ae5789a9925125e59e1da8da09736207f996",
+        "native": "84650a35d58b8f31085be6b3fa8aad74cd4c59e77b452424b9136cddf13f254e"
+      },
+      "manifest_sha256": "92b31bf77e06a1af2aefbb42acc272b41ffb8433b00ccc3a86e15ddf0f45d4be",
+      "runs_sha256": "ae63827913f42fd3bf27cc7473107b0071c03ed86247ab2acf3e18aec1cbf172"
+    },
+    {
+      "task": "portfolio",
+      "scheduled_number": 106,
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "repeat": 16,
+      "auth": "chatgpt",
+      "status": "failed",
+      "server_error": {
+        "code": "server_is_overloaded",
+        "message": "Our servers are currently overloaded. Please try again later."
+      },
+      "answer": null,
+      "reasoning_tokens": null,
+      "sent_body_sha256": "eb8259d100a91a11c15bad5530b5a874b89d632fa11b3fbd12f6f9816da41c15",
+      "source_log_sha256": {
+        "wire": "933f0aa6b5594947a58bdb3a6679fe73be92cc580ae6c3127a4aa23d3e880168",
+        "native": "556fca251a729e65febf0a4285aa544081247df81aa76cbe191f99bf25756590"
+      },
+      "manifest_sha256": "4abddf6c8ce1fb62435c0038f813e0613c76c79ae7180e4f7f5e6e9af7e5ce4c",
+      "runs_sha256": "b08fc153fb4f12d1859d872f09c4faec29ef1a0e34598c10f1f35da1d8c6418e"
+    }
+  ],
+  "completed_responses": 480,
+  "total_attempts": 482
+}

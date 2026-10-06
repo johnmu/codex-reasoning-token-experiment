@@ -1,8 +1,8 @@
-# Same model. Same prompt. 16× more reasoning tokens through the API?
+# Same model. Same prompt. 32× more reasoning tokens through the API?
 
-On our bookstore task, Luna 6 at Medium reported an average of **99.05 reasoning
-tokens through the API versus 6.05 through ChatGPT Pro sign-in**—about **16× more**.
-Both sign-ins got every decision correct.
+On our bookstore task, Luna 6 at Medium reported an average of **96.30 reasoning
+tokens through the API versus 3.025 through ChatGPT Pro sign-in**—about **32× more**
+across 40 completed responses per sign-in. Both sign-ins got every decision correct.
 
 We used the same Codex client, requested model and thinking level, with
 **byte-identical model input** for each matched pair. Yet the reported reasoning
@@ -17,34 +17,43 @@ inside the same client.
 
 ## What we found
 
-We collected **480 responses** to two tasks: choosing projects within a budget,
+We collected **960 completed responses** to two tasks: choosing projects within a budget,
 and diagnosing duplicate emails from a bookstore. We tested Luna 6 and Sol 6.1
-at Low, Medium and High, with 20 responses for each task, model, level and sign-in.
+at Low, Medium and High, with 40 responses for each task, model, level and sign-in.
+The original 480 responses were followed by a fixed, separately analyzed batch
+of another 480.
 
 The clearest differences were on the bookstore task:
 
 | Model | Thinking level | API key | ChatGPT Pro sign-in |
 |---|---|---:|---:|
-| Luna 6 | Low | 75.50 | 0.00 |
-| Luna 6 | Medium | 99.05 | 6.05 |
-| Luna 6 | High | 139.05 | 83.20 |
-| Sol 6.1 | High | 226.75 | 135.25 |
+| Luna 6 | Low | 68.550 | 0.000 |
+| Luna 6 | Medium | 96.300 | 3.025 |
+| Luna 6 | High | 148.525 | 85.200 |
+| Sol 6.1 | High | 216.675 | 138.700 |
 
-These are **average reported reasoning tokens per response**, with 20 responses
-per sign-in in each row. All four differences remained statistically significant
-after accounting for multiple comparisons and the second round of testing.
+These are **average reported reasoning tokens per response**, with 40 completed
+responses per sign-in in each row. These same four differences passed the
+multiple-comparison correction in both the original study and the follow-up.
 
-More tokens did not automatically mean a better answer. All 240 bookstore
-decision sets were correct. On the project task, Luna Low scored 16/20 through
-the API and 6/20 through subscription sign-in, but that accuracy difference did
-not pass the corrected statistical threshold.
+More tokens did not automatically mean a better answer. All 480 bookstore
+decision sets were correct. On the project task, Luna Low scored **35/40 through
+the API and 18/40 through subscription sign-in** across the full dataset.
+That pooled accuracy difference passed the planned conservative correction
+(p = 0.0083), but it remains exploratory. The new batch alone scored 19/20
+versus 12/20 and did not pass its correction (p = 0.371).
+
+The follow-up also encountered two subscription-route capacity failures. We
+preserved both, documented manual continuations, and completed the original
+schedule. The statistics above describe completed responses; the
+[runtime amendment](docs/CONFIRMATION_AMENDMENT.md) explains the interruptions.
 
 We still don't know why the counts differ. This study used two fixed prompts,
 one API credential and one Pro account. Independent runs are needed to find
 out how widely the discrepancy occurs and what causes it.
 
-[Read the full results and statistics](reports/2026-10-05/report.md) ·
-[Browse all answers, token counts and timings](reports/2026-10-05/runs.csv)
+[Read the follow-up and pooled accuracy results](reports/confirmation-2026-10-05/report.md) ·
+[Original results](reports/2026-10-05/report.md)
 
 ## How we made the comparison
 
@@ -68,11 +77,14 @@ This uses the included data and makes no model calls:
 ```sh
 python3 scripts/public_audit.py
 python3 scripts/analyze.py
+python3 scripts/public_audit.py data/confirmation-2026-10-05
+python3 scripts/analyze_followup.py data/confirmation-2026-10-05 --output reports/generated/followup
 ```
 
-The generated report will be in `reports/generated/report.md`.
-The [data guide](data/2026-10-05/README.md) explains what is included and which
-private fields were removed.
+The generated reports will be in `reports/generated/report.md` and
+`reports/generated/followup/report.md`. The [original data guide](data/2026-10-05/README.md)
+and [follow-up data guide](data/confirmation-2026-10-05/README.md) explain the
+included measurements and removed private fields.
 
 ## Run it yourself or help investigate
 

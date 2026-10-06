@@ -1,0 +1,13 @@
+{
+  "models": [
+    "gpt-6-luna",
+    "gpt-6.1-sol"
+  ],
+  "efforts": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "random_seed": 61204,
+  "timeout_seconds": 900
+}

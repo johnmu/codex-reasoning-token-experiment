@@ -1,0 +1,126 @@
+{
+  "scope": "Exploratory; three collection blocks and three significance looks",
+  "correction_factor": 108,
+  "results": [
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "responses_per_sign_in": 40,
+      "api_correct": 40,
+      "chatgpt_correct": 40,
+      "p": 1.0,
+      "bonferroni_36_outcomes_3_looks": 1.0
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "responses_per_sign_in": 40,
+      "api_correct": 40,
+      "chatgpt_correct": 40,
+      "p": 1.0,
+      "bonferroni_36_outcomes_3_looks": 1.0
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "responses_per_sign_in": 40,
+      "api_correct": 40,
+      "chatgpt_correct": 40,
+      "p": 1.0,
+      "bonferroni_36_outcomes_3_looks": 1.0
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "responses_per_sign_in": 40,
+      "api_correct": 40,
+      "chatgpt_correct": 40,
+      "p": 1.0,
+      "bonferroni_36_outcomes_3_looks": 1.0
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "responses_per_sign_in": 40,
+      "api_correct": 40,
+      "chatgpt_correct": 40,
+      "p": 1.0,
+      "bonferroni_36_outcomes_3_looks": 1.0
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "responses_per_sign_in": 40,
+      "api_correct": 40,
+      "chatgpt_correct": 40,
+      "p": 1.0,
+      "bonferroni_36_outcomes_3_looks": 1.0
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "responses_per_sign_in": 40,
+      "api_correct": 30,
+      "chatgpt_correct": 35,
+      "p": 0.29878958852318305,
+      "bonferroni_36_outcomes_3_looks": 1.0
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "responses_per_sign_in": 40,
+      "api_correct": 35,
+      "chatgpt_correct": 18,
+      "p": 7.655713353110819e-05,
+      "bonferroni_36_outcomes_3_looks": 0.008268170421359683
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "responses_per_sign_in": 40,
+      "api_correct": 36,
+      "chatgpt_correct": 33,
+      "p": 0.5488259987382857,
+      "bonferroni_36_outcomes_3_looks": 1.0
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "responses_per_sign_in": 40,
+      "api_correct": 40,
+      "chatgpt_correct": 40,
+      "p": 1.0,
+      "bonferroni_36_outcomes_3_looks": 1.0
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "responses_per_sign_in": 40,
+      "api_correct": 39,
+      "chatgpt_correct": 40,
+      "p": 1.0,
+      "bonferroni_36_outcomes_3_looks": 1.0
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "responses_per_sign_in": 40,
+      "api_correct": 40,
+      "chatgpt_correct": 40,
+      "p": 1.0,
+      "bonferroni_36_outcomes_3_looks": 1.0
+    }
+  ]
+}

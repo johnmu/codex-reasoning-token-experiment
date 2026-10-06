@@ -1,0 +1,14 @@
+{
+  "choose": 3,
+  "budget": 15,
+  "categories": ["reliability", "features"],
+  "conflicts": [["B", "E"]],
+  "projects": [
+    {"id": "A", "cost": 8, "value": 14, "category": "reliability"},
+    {"id": "B", "cost": 7, "value": 19, "category": "features"},
+    {"id": "C", "cost": 6, "value": 11, "category": "reliability"},
+    {"id": "D", "cost": 5, "value": 9, "category": "features"},
+    {"id": "E", "cost": 4, "value": 8, "category": "reliability"},
+    {"id": "F", "cost": 3, "value": 5, "category": "features"}
+  ]
+}

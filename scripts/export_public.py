@@ -102,7 +102,7 @@ def export(collections, output, looks=1):
                           "account_types_and_plans": {auth: {key: value.get(key) for key in ["type", "plan"]}
                                                       for auth, value in accounts.items()},
                           "request_body_sha256": manifest["request_body_sha256"],
-                          "source_sha256": {name: value for name, value in manifest["source_sha256"].items() if name != "README.md"},
+                          "source_sha256": {name: value for name, value in manifest["source_sha256"].items() if Path(name).name != "README.md"},
                           "original_raw_audit_passed": audit_result["passed"],
                           "original_manifest_sha256": digest(folder / "manifest.json")})
             sources.append((folder, batch, task))
@@ -120,7 +120,7 @@ def export(collections, output, looks=1):
     for folder, batch, task in sources:
         manifest = read_json(folder / "manifest.json")
         for name in manifest["source_sha256"]:
-            if name == "README.md":
+            if Path(name).name == "README.md":
                 continue
             destination = output / "source" / batch / name
             destination.parent.mkdir(parents=True, exist_ok=True)

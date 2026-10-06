@@ -1,0 +1,18 @@
+An online bookstore starts sending some customers two order-confirmation emails after Monday's mobile-app release. The team suspects the new app, the mail provider, or an older server fault. Orders themselves are not duplicated.
+
+The investigation finds:
+- The server has not changed for three months. The new app shortened its request timeout from eight seconds to two, then retries with the same order ID.
+- The mail provider's records show two separate send requests for each duplicated email, rather than one request delivered twice.
+- The old app can reproduce the problem when given the shorter timeout. Giving the new app the old timeout makes duplicates much rarer.
+- Replaying one request, or two sequential requests for the same order, sends one email. Two overlapping requests for the same order sometimes send two emails, with either app version.
+- In those overlapping cases, both server requests read "email_sent = false" before either finishes. Each sends the email and only then records "email_sent = true".
+
+Choose the best-supported underlying cause, the trigger that exposed it, the best immediate mitigation, and the most informative confirmation test. Distinguish a trigger from an underlying cause.
+
+Use these labels:
+cause: new_app_creates_two_orders | provider_duplicates_delivery | server_check_send_race | new_email_template
+trigger: shorter_client_timeout | changed_server_release | changed_provider_routing | expired_database_credentials
+mitigation: rollback_email_template | serialize_same_order_requests | disable_all_email | add_more_workers
+test: replay_overlapping_requests_before_after_serialization | compare_template_colors | send_two_different_orders | restart_mail_provider
+
+Return one compact JSON object with cause, trigger, mitigation, test, and explanation. Explain your decision in two or three sentences, using the evidence and noting one caveat about the mitigation. Use no tools or outside information.

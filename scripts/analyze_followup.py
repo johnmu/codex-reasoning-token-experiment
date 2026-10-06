@@ -6,7 +6,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from analyze import analyze
-from common import ROOT, read_json, write_json
+from common import ROOT, file_hash, read_json, write_json
 from public_audit import verify
 
 
@@ -90,6 +90,11 @@ def followup(data, output):
         assert task['request_body_sha256'] == expected['request_body_sha256']
         assert task['codex_sha256'] == plan['codex_sha256']
     assert len(new[1]['batches'][0]['tasks']) == len(plan['experiments'])
+    failures = read_json(data / 'runtime-errors.json')
+    assert file_hash(data / 'runtime-errors.json') == new[1]['runtime_errors_sha256']
+    assert failures['failures'] == read_json(ROOT / 'plans/confirmation-runtime-errors.json')['failures']
+    assert failures['completed_responses'] == 480
+    assert failures['total_attempts'] == 480 + len(failures['failures'])
     analyze(data, output / 'new-batch', looks=1)
     primary = read_json(output / 'new-batch/significance.json')
     pooled = pooled_accuracy([baseline, new])
@@ -99,7 +104,13 @@ def followup(data, output):
     lines = ['# Results of the fixed 480-response follow-up', '',
              '[Plan published before collection](../../docs/CONFIRMATION_PLAN.md). '
              'The original 480 responses are unchanged; this batch adds 480 new responses.', '',
-             '## New batch: independent confirmation', '',
+             '## New batch: completed-response comparison', '',
+             f"This batch required {failures['total_attempts']} attempts. {len(failures['failures'])} subscription requests "
+             'failed with a server-capacity error and were manually repeated after inspection. '
+             '[The runtime amendment](../../docs/CONFIRMATION_AMENDMENT.md) and '
+             '[failure evidence](../../data/confirmation-2026-10-05/runtime-errors.json) disclose the interruptions. '
+             'These statistics describe completed responses and do not measure availability per attempt. '
+             'The deviations limit interpretation as confirmation of the original study.', '',
              'The exact paired tests use only the new answers. Holm correction covers all 36 '
              'task/model/level/outcome comparisons, with one final look.', '',
              '| Outcome | Differences significant at 5% |', '|---|---:|']
