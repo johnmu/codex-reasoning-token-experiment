@@ -8,7 +8,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "experiment/src"))
 from common import ROOT, native_codex, write_json
 from export_public import extract, TOKEN_NAMES
 from public_audit import verify
@@ -16,7 +16,7 @@ from paired_statistics import distribution, tail_probability, holm
 from check_public import findings
 from analyze import analyze
 
-DATA = ROOT / "data/2026-10-05"
+DATA = ROOT / "studies/initial/data"
 
 
 class PublicTests(unittest.TestCase):

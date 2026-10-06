@@ -5,22 +5,23 @@ import tempfile
 import unittest
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'experiment/src'))
 from audit import audit, digest
 from common import write_json
 from identical import payload, PROTOCOL_HEADERS
 
 
-def evidence(directory, task, answer):
+def evidence(directory, task, answer, current_layout=False):
     source = directory / 'source'
     source.mkdir()
     expected = {'value': 1}
     if task == 'bookstore':
-        reference = source / 'benchmarks/bookstore/rubric.json'
+        reference = source / ('experiment/tasks/bookstore/rubric.json' if current_layout else 'benchmarks/bookstore/rubric.json')
         reference.parent.mkdir(parents=True)
         write_json(reference, {'expected_decisions': expected})
     else:
-        reference = source / 'expected.json'
+        reference = source / ('experiment/tasks/portfolio/expected.json' if current_layout else 'expected.json')
+        reference.parent.mkdir(parents=True, exist_ok=True)
         write_json(reference, expected)
     body_file = directory / 'request-gpt-6-luna-medium.json'
     write_json(body_file, payload('task', 'instructions', 'gpt-6-luna', 'medium'))
@@ -63,11 +64,12 @@ def evidence(directory, task, answer):
 class AuditTests(unittest.TestCase):
     def test_both_tasks_accept_correct_and_malformed_completed_answers(self):
         for task in ['portfolio', 'bookstore']:
-            for answer in ['{"value": 1}', 'malformed answer']:
-                with self.subTest(task=task, answer=answer), tempfile.TemporaryDirectory() as name:
-                    directory = Path(name)
-                    evidence(directory, task, answer)
-                    self.assertTrue(audit(directory)['passed'])
+            for current_layout in [False, True]:
+                for answer in ['{"value": 1}', 'malformed answer']:
+                    with self.subTest(task=task, answer=answer, current_layout=current_layout), tempfile.TemporaryDirectory() as name:
+                        directory = Path(name)
+                        evidence(directory, task, answer, current_layout)
+                        self.assertTrue(audit(directory)['passed'])
 
     def test_corrupt_server_usage_is_rejected(self):
         with tempfile.TemporaryDirectory() as name:

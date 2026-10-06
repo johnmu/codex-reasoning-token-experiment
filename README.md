@@ -15,6 +15,9 @@ explain the discrepancy.
 Both sign-ins use **Codex**; this compares API access with subscription access
 inside the same client.
 
+[Read the studies](studies/README.md) · [Repeat the experiment](docs/reproduce.md) ·
+[Explore the code](experiment/README.md)
+
 ## What we found
 
 We collected **960 completed responses** to two tasks: choosing projects within a budget,
@@ -46,14 +49,14 @@ versus 12/20 and did not pass its correction (p = 0.371).
 The follow-up also encountered two subscription-route capacity failures. We
 preserved both, documented manual continuations, and completed the original
 schedule. The statistics above describe completed responses; the
-[runtime amendment](docs/CONFIRMATION_AMENDMENT.md) explains the interruptions.
+[runtime amendment](studies/followup/plan/amendments.md) explains the interruptions.
 
 We still don't know why the counts differ. This study used two fixed prompts,
 one API credential and one Pro account. Independent runs are needed to find
 out how widely the discrepancy occurs and what causes it.
 
-[Read the follow-up and pooled accuracy results](reports/confirmation-2026-10-05/report.md) ·
-[Original results](reports/2026-10-05/report.md)
+[Read the follow-up and pooled accuracy results](studies/followup/results/report.md) ·
+[Original results](studies/initial/results/report.md)
 
 ## How we made the comparison
 
@@ -66,7 +69,7 @@ Codex's own records. Incorrect answers stay in the dataset. The proxy leaves
 real server responses unchanged.
 
 The counts describe reported usage; they don't reveal the model's internal
-reasoning budget. The [full protocol](docs/PROTOCOL.md) explains the controls,
+reasoning budget. The [full protocol](docs/protocol.md) explains the controls,
 proxy behavior and limits of the comparison.
 
 ## Check our numbers
@@ -75,16 +78,13 @@ You can recompute the published results locally with Python 3.12 or later.
 This uses the included data and makes no model calls:
 
 ```sh
-python3 scripts/public_audit.py
-python3 scripts/analyze.py
-python3 scripts/public_audit.py data/confirmation-2026-10-05
-python3 scripts/analyze_followup.py data/confirmation-2026-10-05 --output reports/generated/followup
+python3 -m experiment verify
+python3 -m experiment analyze
 ```
 
-The generated reports will be in `reports/generated/report.md` and
-`reports/generated/followup/report.md`. The [original data guide](data/2026-10-05/README.md)
-and [follow-up data guide](data/confirmation-2026-10-05/README.md) explain the
-included measurements and removed private fields.
+The generated report will be in `output/reports/followup/report.md`.
+The [study index](studies/README.md) links the published reports, answer tables,
+data guides, and recorded plans.
 
 ## Run it yourself or help investigate
 
@@ -94,9 +94,11 @@ useful.
 
 | If you want to… | Start here |
 |---|---|
-| Repeat the experiment with your accounts | [Setup and run guide](docs/REPRODUCE.md) |
-| Explore possible explanations | [Investigation plan](docs/INVESTIGATION.md) |
-| Compare this with other people's reports | [Related reports and contrasting evidence](docs/RELATED_WORK.md) |
+| Browse the results and evidence | [Studies](studies/README.md) |
+| Repeat the experiment with your accounts | [Setup and run guide](docs/reproduce.md) |
+| Explore possible explanations | [Investigation plan](docs/investigation.md) |
+| Compare this with other people's reports | [Related reports and contrasting evidence](docs/related-work.md) |
+| Understand or change the runner | [Experiment code guide](experiment/README.md) |
 | Share a reproduction or improve the code | [Contributing](CONTRIBUTING.md) |
 
 Other people have reported similar behavior. [Codex issue #49757](https://github.com/openai/codex/issues/49757)
@@ -104,6 +106,4 @@ compares Astra through Enterprise sign-in and the public API. Our related-work
 review also covers a Luna report, effort-setting bugs and studies with different
 results. They offer useful leads, but none establishes the cause of our findings.
 
-For a first look at the code, start with the
-[request definition](scripts/identical.py) and the [collection loop](scripts/run.py).
-The repository includes the measured source snapshots and uses the [MIT license](LICENSE).
+The repository uses the [MIT license](LICENSE).

@@ -1,4 +1,5 @@
 .local/
+output/
 .history/
 results/
 reports/generated/

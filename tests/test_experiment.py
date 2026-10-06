@@ -8,10 +8,10 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch, Mock
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "experiment/src"))
 from common import ROOT, codex_environment, read_json, write_json
 from check_answer import solve
-from run import make_schedule, measure, is_correct, check_available, preflight
+from run import make_schedule, measure, is_correct, check_available, preflight, save_source
 from summarize import summarize
 from bookstore import grade as grade_bookstore
 
@@ -35,7 +35,7 @@ class FakeClient:
 
 
 def fake_events(reasoning=900):
-    answer = json.dumps(read_json(ROOT / "expected.json"))
+    answer = json.dumps(read_json(ROOT / "experiment/tasks/portfolio/expected.json"))
     total = {} if reasoning is None else {"reasoningOutputTokens": reasoning}
     usage = {"method": "thread/tokenUsage/updated", "params": {
         "threadId": "thread", "turnId": "turn",
@@ -46,8 +46,20 @@ def fake_events(reasoning=900):
 
 
 class ExperimentTests(unittest.TestCase):
+    def test_new_collections_freeze_the_relocated_inputs_and_code(self):
+        settings = {**read_json(ROOT / 'experiment/config/settings.json'), 'benchmark': 'bookstore', 'capture': True}
+        with tempfile.TemporaryDirectory() as name:
+            output = Path(name)
+            save_source(output, sys.executable, settings, make_schedule(settings))
+            manifest = read_json(output / 'manifest.json')
+            for relative in ['experiment/__main__.py', 'experiment/src/identical.py',
+                             'experiment/config/controlled.toml', 'experiment/config/settings.json',
+                             'experiment/tasks/portfolio/expected.json', 'experiment/tasks/bookstore/rubric.json']:
+                self.assertIn(relative, manifest['source_sha256'])
+                self.assertEqual((output / 'source' / relative).read_bytes(), (ROOT / relative).read_bytes())
+
     def test_bookstore_grading_preserves_partial_credit_without_grading_prose(self):
-        rubric = read_json(ROOT / "benchmarks/bookstore/rubric.json")
+        rubric = read_json(ROOT / "experiment/tasks/bookstore/rubric.json")
         answer = {**rubric["expected_decisions"], "explanation": "A different phrasing."}
         self.assertEqual(grade_bookstore(json.dumps(answer), rubric)["score"], 4)
         answer["cause"] = "provider_duplicates_delivery"
@@ -63,15 +75,15 @@ class ExperimentTests(unittest.TestCase):
         return measure(client, "gpt-6-luna", "high", "test", "test", Path('/private/tmp'), 10)
 
     def test_reference_and_prompt_match(self):
-        problem = read_json(ROOT / "problem.json")
-        prompt_data = json.loads((ROOT / "prompt.txt").read_text().rsplit("Here is the complete instance:\n", 1)[1])
+        problem = read_json(ROOT / "experiment/tasks/portfolio/problem.json")
+        prompt_data = json.loads((ROOT / "experiment/tasks/portfolio/prompt.txt").read_text().rsplit("Here is the complete instance:\n", 1)[1])
         self.assertEqual(problem, prompt_data)
         answer, count = solve(problem)
         self.assertEqual(count, 5)
-        self.assertTrue(is_correct(json.dumps(answer), read_json(ROOT / "expected.json")))
+        self.assertTrue(is_correct(json.dumps(answer), read_json(ROOT / "experiment/tasks/portfolio/expected.json")))
 
     def test_schedule_is_deterministic_balanced_and_paired(self):
-        settings = read_json(ROOT / "settings.json")
+        settings = read_json(ROOT / "experiment/config/settings.json")
         schedule = make_schedule(settings)
         self.assertEqual(schedule, make_schedule(settings))
         self.assertEqual(len(schedule), 12)
@@ -88,7 +100,7 @@ class ExperimentTests(unittest.TestCase):
         self.assertTrue(result['eligible'])
 
     def test_ten_medium_repeats_make_twenty_balanced_responses(self):
-        settings = {**read_json(ROOT / 'settings.json'), 'models': ['gpt-6-luna'],
+        settings = {**read_json(ROOT / 'experiment/config/settings.json'), 'models': ['gpt-6-luna'],
                     'efforts': ['medium'], 'repeats': 10}
         schedule = make_schedule(settings)
         self.assertEqual(schedule, make_schedule(settings))
@@ -101,8 +113,8 @@ class ExperimentTests(unittest.TestCase):
             self.assertEqual({a['auth'], b['auth']}, {'api', 'chatgpt'})
 
     def test_both_tasks_cli_preview_covers_the_full_matrix_without_calls(self):
-        text = subprocess.check_output([sys.executable, '-B', str(ROOT / 'scripts/run.py'),
-                                        '--benchmark', 'both', '--repeats', '10'], text=True)
+        text = subprocess.check_output([sys.executable, '-B', '-m', 'experiment', 'run',
+                                        '--benchmark', 'both', '--repeats', '10'], text=True, cwd=ROOT)
         experiments = json.loads(text.split('\nPreview only:')[0])
         self.assertEqual({e['settings']['benchmark'] for e in experiments}, {'portfolio', 'bookstore'})
         self.assertEqual(sum(len(e['schedule']) for e in experiments), 240)
@@ -113,7 +125,7 @@ class ExperimentTests(unittest.TestCase):
             self.assertEqual(sum(r['auth'] == 'api' for r in schedule[::2]), 30)
 
     def test_preflight_closes_both_clients_and_never_starts_a_turn(self):
-        settings = read_json(ROOT / 'settings.json')
+        settings = read_json(ROOT / 'experiment/config/settings.json')
         clients = [Mock(), Mock()]
         for client in clients:
             client.check_login.return_value = {'type': 'test'}
@@ -135,7 +147,7 @@ class ExperimentTests(unittest.TestCase):
     def test_summary_keeps_each_repeat_and_uses_all_counts(self):
         with tempfile.TemporaryDirectory() as name:
             directory = Path(name)
-            settings = {**read_json(ROOT / 'settings.json'), 'models': ['gpt-6-luna'],
+            settings = {**read_json(ROOT / 'experiment/config/settings.json'), 'models': ['gpt-6-luna'],
                         'efforts': ['medium'], 'repeats': 2}
             write_json(directory / 'manifest.json', {'codex_version': 'test', 'settings': settings,
                                                      'schedule': make_schedule(settings)})
@@ -178,7 +190,7 @@ class ExperimentTests(unittest.TestCase):
 
     def test_missing_capability_stops_collection(self):
         with self.assertRaises(RuntimeError):
-            check_available([], read_json(ROOT / 'settings.json'))
+            check_available([], read_json(ROOT / 'experiment/config/settings.json'))
 
     def test_ambient_keys_are_removed_only_from_the_child(self):
         with patch.dict(os.environ, {'OPENAI_API_KEY': 'test-value', 'CODEX_API_KEY': 'test-value'}):
@@ -190,7 +202,7 @@ class ExperimentTests(unittest.TestCase):
     def test_summary_preserves_missing_and_flagged_observations(self):
         with tempfile.TemporaryDirectory() as name:
             directory = Path(name)
-            settings = read_json(ROOT / 'settings.json')
+            settings = read_json(ROOT / 'experiment/config/settings.json')
             write_json(directory / 'manifest.json', {'codex_version': 'test', 'settings': settings,
                                                      'schedule': make_schedule(settings)})
             write_json(directory / 'runs.json', [

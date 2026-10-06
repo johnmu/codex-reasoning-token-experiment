@@ -6,7 +6,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'experiment/src'))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'studies/followup/recovery'))
 from analyze_followup import accuracy_distribution, combined_p_value, pooled_accuracy
 from common import ROOT
 from paired_statistics import distribution
@@ -73,10 +74,10 @@ class FollowupTests(unittest.TestCase):
         self.assertAlmostEqual(combined_p_value([weights], observed), expected)
 
     def test_reproduces_original_accuracy_p_values(self):
-        directory = ROOT / 'data/2026-10-05'
+        directory = ROOT / 'studies/initial/data'
         rows = [json.loads(line) for line in (directory / 'records.jsonl').read_text().splitlines()]
         manifest = json.loads((directory / 'manifest.json').read_text())
-        old = json.loads((ROOT / 'reports/2026-10-05/significance.json').read_text())['results']
+        old = json.loads((ROOT / 'studies/initial/results/significance.json').read_text())['results']
         expected = {(row['task'], row['model'], row['effort']): row['correct']['p'] for row in old}
         for row in pooled_accuracy([(rows, manifest)]):
             self.assertAlmostEqual(row['p'], expected[row['task'], row['model'], row['effort']])

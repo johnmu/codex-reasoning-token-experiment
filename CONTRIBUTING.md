@@ -5,7 +5,7 @@ October 5 dataset; add a new folder for your run.
 
 Before collecting, record your model IDs, thinking levels, tasks, sample size,
 seed and statistical comparisons. Start with the small test in the
-[setup and run guide](docs/REPRODUCE.md). Keep
+[setup and run guide](docs/reproduce.md). Keep
 every attempt and report any failure or incompatibility. Never silently rerun,
 replace failed trials or select the most favorable answers.
 
@@ -22,7 +22,7 @@ transport, provider, tool context or multi-turn protocol is a new study; label i
 - Batch-level summaries, analysis method and correction scope.
 - Any code changes, failures, missing telemetry and departures from the protocol.
 
-Use the [run guide's export command](docs/REPRODUCE.md#6-analyze-and-share-the-results). The exporter requires the two
+Use the [run guide's export command](docs/reproduce.md#6-analyze-and-share-the-results). The exporter requires the two
 public tasks and known neutral payload; modified private prompts require a
 separate reviewed export. Full captures and private native logs remain ignored.
 
@@ -34,9 +34,9 @@ Offline checks before submitting:
 
 ```sh
 python3 -B -m unittest discover -s tests -q
-python3 -B scripts/public_audit.py data/my-reproduction
-git add data/my-reproduction
-python3 -B scripts/check_public.py --staged
+python3 -B -m experiment verify studies/my-reproduction/data
+git add studies/my-reproduction/data
+python3 -B -m experiment check-public --staged
 ```
 
 All CI checks are offline and need no login. The privacy checker reports file
