@@ -1,0 +1,26 @@
+name: Reproduction or negative result
+description: Share a controlled comparison and public evidence.
+title: "[Reproduction] "
+body:
+  - type: textarea
+    attributes:
+      label: Environment
+      description: CLI version/native hash, OS/architecture, Python, mitmproxy, subscription plan and collection date. No account IDs or credentials.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Protocol and controls
+      description: Models, effort levels, tasks, sample size, seed, request equality and any changes from this repository.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Public evidence and results
+      description: Link the allowlisted export, audit, all answers/counts/latency, batch summaries and statistical analysis. Include negative results and failures.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Interpretation and open questions
+      description: Separate measured facts from hypotheses. Explain any proposed cause and the evidence that distinguishes it.

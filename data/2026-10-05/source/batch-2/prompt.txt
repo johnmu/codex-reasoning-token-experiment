@@ -1,0 +1,24 @@
+Choose exactly three projects with the highest total value.
+Their total cost must be at most 15. Include at least one reliability project
+and at least one features project. Projects B and E cannot both be selected.
+
+If values tie, prefer the lower total cost, then the alphabetically earlier
+sorted list of IDs. Return only {"ids":[...],"value":0,"cost":0}, using
+alphabetically sorted IDs and integers. Use only the information below;
+do not use tools or code execution.
+
+Here is the complete instance:
+{
+  "choose": 3,
+  "budget": 15,
+  "categories": ["reliability", "features"],
+  "conflicts": [["B", "E"]],
+  "projects": [
+    {"id": "A", "cost": 8, "value": 14, "category": "reliability"},
+    {"id": "B", "cost": 7, "value": 19, "category": "features"},
+    {"id": "C", "cost": 6, "value": 11, "category": "reliability"},
+    {"id": "D", "cost": 5, "value": 9, "category": "features"},
+    {"id": "E", "cost": 4, "value": 8, "category": "reliability"},
+    {"id": "F", "cost": 3, "value": 5, "category": "features"}
+  ]
+}

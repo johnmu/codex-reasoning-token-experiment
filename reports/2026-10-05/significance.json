@@ -1,0 +1,431 @@
+{
+  "metrics": [
+    "reasoning_tokens",
+    "correct",
+    "seconds"
+  ],
+  "conditions": 12,
+  "looks": 2,
+  "results": [
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "reasoning_tokens": {
+        "api_mean": 205.45,
+        "chatgpt_mean": 138.55,
+        "difference": 66.9,
+        "p": 0.011208620368487793,
+        "holm_metric": 0.08966896294790234,
+        "holm_metric_looks": 0.1793379258958047,
+        "holm_all": 0.25779826847521925,
+        "holm_all_looks": 0.5155965369504385
+      },
+      "correct": {
+        "api_mean": 0.8,
+        "chatgpt_mean": 0.3,
+        "difference": 0.5,
+        "p": 0.00641184424480529,
+        "holm_metric": 0.07694213093766347,
+        "holm_metric_looks": 0.15388426187532694,
+        "holm_all": 0.15388426187532694,
+        "holm_all_looks": 0.3077685237506539
+      },
+      "seconds": {
+        "api_mean": 4.155295829055831,
+        "chatgpt_mean": 5.501740958157461,
+        "difference": -1.3464451291016304,
+        "p": 0.0610723557949905,
+        "holm_metric": 0.122144711589981,
+        "holm_metric_looks": 0.244289423179962,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "reasoning_tokens": {
+        "api_mean": 290.5,
+        "chatgpt_mean": 226.8,
+        "difference": 63.7,
+        "p": 0.030171342666053553,
+        "holm_metric": 0.21119939866237486,
+        "holm_metric_looks": 0.4223987973247497,
+        "holm_all": 0.6335981959871246,
+        "holm_all_looks": 1.0
+      },
+      "correct": {
+        "api_mean": 0.9,
+        "chatgpt_mean": 0.95,
+        "difference": -0.05,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 5.408100204134826,
+        "chatgpt_mean": 6.337031535455026,
+        "difference": -0.9289313313202001,
+        "p": 0.030525817923498892,
+        "holm_metric": 0.09157745377049667,
+        "holm_metric_looks": 0.18315490754099334,
+        "holm_all": 0.6335981959871246,
+        "holm_all_looks": 1.0
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "reasoning_tokens": {
+        "api_mean": 311.4,
+        "chatgpt_mean": 267,
+        "difference": 44.4,
+        "p": 0.1132260657143636,
+        "holm_metric": 0.6793563942861816,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "correct": {
+        "api_mean": 0.85,
+        "chatgpt_mean": 0.85,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 5.249182633549208,
+        "chatgpt_mean": 8.005122400040273,
+        "difference": -2.755939766491065,
+        "p": 7.663917069155713e-05,
+        "holm_metric": 0.00038319585345778564,
+        "holm_metric_looks": 0.0007663917069155713,
+        "holm_all": 0.0019159792672889283,
+        "holm_all_looks": 0.0038319585345778567
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "reasoning_tokens": {
+        "api_mean": 105.8,
+        "chatgpt_mean": 100.75,
+        "difference": 5.05,
+        "p": 0.1703415067653382,
+        "holm_metric": 0.8517075338266911,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "correct": {
+        "api_mean": 0.95,
+        "chatgpt_mean": 1,
+        "difference": -0.05,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 4.838538247905672,
+        "chatgpt_mean": 6.96549510830082,
+        "difference": -2.1269568603951483,
+        "p": 1.0253238694992943e-05,
+        "holm_metric": 7.17726708649506e-05,
+        "holm_metric_looks": 0.0001435453417299012,
+        "holm_all": 0.0002870906834598024,
+        "holm_all_looks": 0.0005741813669196048
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "reasoning_tokens": {
+        "api_mean": 112.25,
+        "chatgpt_mean": 111.35,
+        "difference": 0.9,
+        "p": 0.7680224288769578,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 5.0875493730069135,
+        "chatgpt_mean": 6.727182652300689,
+        "difference": -1.6396332792937756,
+        "p": 2.1126178629793155e-06,
+        "holm_metric": 2.343597415998387e-05,
+        "holm_metric_looks": 4.687194831996774e-05,
+        "holm_all": 6.83549246332863e-05,
+        "holm_all_looks": 0.0001367098492665726
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "reasoning_tokens": {
+        "api_mean": 135.95,
+        "chatgpt_mean": 130.95,
+        "difference": 5.0,
+        "p": 0.3663188665629924,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 5.428280200087466,
+        "chatgpt_mean": 7.775695875048404,
+        "difference": -2.3474156749609394,
+        "p": 3.990500407849818e-06,
+        "holm_metric": 3.192400326279854e-05,
+        "holm_metric_looks": 6.384800652559708e-05,
+        "holm_all": 0.00011971501223549453,
+        "holm_all_looks": 0.00023943002447098907
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "reasoning_tokens": {
+        "api_mean": 75.5,
+        "chatgpt_mean": 0,
+        "difference": 75.5,
+        "p": 1.9529978466653226e-06,
+        "holm_metric": 2.148297631331855e-05,
+        "holm_metric_looks": 4.29659526266371e-05,
+        "holm_all": 6.83549246332863e-05,
+        "holm_all_looks": 0.0001367098492665726
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 2.981081048102351,
+        "chatgpt_mean": 3.98686348128831,
+        "difference": -1.0057824331859593,
+        "p": 1.9529978466653226e-06,
+        "holm_metric": 2.343597415998387e-05,
+        "holm_metric_looks": 4.687194831996774e-05,
+        "holm_all": 6.83549246332863e-05,
+        "holm_all_looks": 0.0001367098492665726
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "reasoning_tokens": {
+        "api_mean": 99.05,
+        "chatgpt_mean": 6.05,
+        "difference": 93.0,
+        "p": 1.6042482311893722e-06,
+        "holm_metric": 1.9250978774272467e-05,
+        "holm_metric_looks": 3.8501957548544934e-05,
+        "holm_all": 5.77529363228174e-05,
+        "holm_all_looks": 0.0001155058726456348
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 5.540649604180362,
+        "chatgpt_mean": 4.016325054195477,
+        "difference": 1.5243245499848854,
+        "p": 0.9995702049822688,
+        "holm_metric": 0.9995702049822688,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "reasoning_tokens": {
+        "api_mean": 139.05,
+        "chatgpt_mean": 83.2,
+        "difference": 55.85,
+        "p": 3.194273439599214e-05,
+        "holm_metric": 0.00028748460956392924,
+        "holm_metric_looks": 0.0005749692191278585,
+        "holm_all": 0.0008305110942957956,
+        "holm_all_looks": 0.0016610221885915912
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 3.8514942102890926,
+        "chatgpt_mean": 5.487515533313854,
+        "difference": -1.6360213230247609,
+        "p": 2.197122577498488e-06,
+        "holm_metric": 2.343597415998387e-05,
+        "holm_metric_looks": 4.687194831996774e-05,
+        "holm_all": 6.83549246332863e-05,
+        "holm_all_looks": 0.0001367098492665726
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "reasoning_tokens": {
+        "api_mean": 0,
+        "chatgpt_mean": 0,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 3.940374587458791,
+        "chatgpt_mean": 6.288751820795005,
+        "difference": -2.348377233336214,
+        "p": 1.9529978466653226e-06,
+        "holm_metric": 2.343597415998387e-05,
+        "holm_metric_looks": 4.687194831996774e-05,
+        "holm_all": 6.83549246332863e-05,
+        "holm_all_looks": 0.0001367098492665726
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "reasoning_tokens": {
+        "api_mean": 3.05,
+        "chatgpt_mean": 0,
+        "difference": 3.05,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 4.32396032079123,
+        "chatgpt_mean": 6.212761433387641,
+        "difference": -1.8888011125964113,
+        "p": 2.075060212081905e-05,
+        "holm_metric": 0.0001245036127249143,
+        "holm_metric_looks": 0.0002490072254498286,
+        "holm_all": 0.0005602662572621144,
+        "holm_all_looks": 0.0011205325145242288
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "reasoning_tokens": {
+        "api_mean": 226.75,
+        "chatgpt_mean": 135.25,
+        "difference": 91.5,
+        "p": 4.309740440477803e-06,
+        "holm_metric": 4.3097404404778034e-05,
+        "holm_metric_looks": 8.619480880955607e-05,
+        "holm_all": 0.0001249824727738563,
+        "holm_all_looks": 0.0002499649455477126
+      },
+      "correct": {
+        "api_mean": 1,
+        "chatgpt_mean": 1,
+        "difference": 0.0,
+        "p": 1.0,
+        "holm_metric": 1.0,
+        "holm_metric_looks": 1.0,
+        "holm_all": 1.0,
+        "holm_all_looks": 1.0
+      },
+      "seconds": {
+        "api_mean": 9.41519861459965,
+        "chatgpt_mean": 10.424032325000734,
+        "difference": -1.008833710401086,
+        "p": 0.021374187072817248,
+        "holm_metric": 0.08549674829126899,
+        "holm_metric_looks": 0.17099349658253798,
+        "holm_all": 0.4702321156019795,
+        "holm_all_looks": 0.940464231203959
+      }
+    }
+  ]
+}

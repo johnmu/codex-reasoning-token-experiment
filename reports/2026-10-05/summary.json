@@ -1,0 +1,1662 @@
+{
+  "responses": 480,
+  "estimated_api_cost_usd": 0.3224745,
+  "groups": [
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "auth": "api",
+      "responses": 20,
+      "correct": 16,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 379,
+        "median": 379.0,
+        "min": 379,
+        "max": 379
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 229.35,
+        "median": 224.5,
+        "min": 175,
+        "max": 305
+      },
+      "reasoning_tokens": {
+        "mean": 205.45,
+        "median": 200.5,
+        "min": 151,
+        "max": 281
+      },
+      "total_tokens": {
+        "mean": 608.35,
+        "median": 603.5,
+        "min": 554,
+        "max": 684
+      },
+      "seconds": {
+        "mean": 4.155295829055831,
+        "median": 4.030595624994021,
+        "min": 3.406076875049621,
+        "max": 5.58816470799502
+      },
+      "first_text_seconds": {
+        "mean": 4.009242535202065,
+        "median": 3.878098499495536,
+        "min": 3.224625917035155,
+        "max": 5.4290697909891605
+      },
+      "wire_seconds": {
+        "mean": 3.804929416748928,
+        "median": 3.7195476255146787,
+        "min": 3.034012999967672,
+        "max": 5.170861124992371
+      },
+      "wire_first_text_seconds": {
+        "mean": 3.6596068041515535,
+        "median": 3.563338208536152,
+        "min": 2.852581833023578,
+        "max": 5.012738874997012
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "auth": "chatgpt",
+      "responses": 20,
+      "correct": 6,
+      "zero_reasoning": 6,
+      "input_tokens": {
+        "mean": 379,
+        "median": 379.0,
+        "min": 379,
+        "max": 379
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 161.35,
+        "median": 204.0,
+        "min": 20,
+        "max": 274
+      },
+      "reasoning_tokens": {
+        "mean": 138.55,
+        "median": 181.0,
+        "min": 0,
+        "max": 250
+      },
+      "total_tokens": {
+        "mean": 540.35,
+        "median": 583.0,
+        "min": 399,
+        "max": 653
+      },
+      "seconds": {
+        "mean": 5.501740958157461,
+        "median": 5.561440437450074,
+        "min": 1.8379465830512345,
+        "max": 10.95965870807413
+      },
+      "first_text_seconds": {
+        "mean": 5.144484083348653,
+        "median": 5.2733014379628,
+        "min": 1.4507344169542193,
+        "max": 10.808034792076796
+      },
+      "wire_seconds": {
+        "mean": 4.7466736564412715,
+        "median": 4.8459055835264735,
+        "min": 1.1872487089131027,
+        "max": 10.24738716694992
+      },
+      "wire_first_text_seconds": {
+        "mean": 4.390057843941031,
+        "median": 4.558288708503824,
+        "min": 0.7983486249577254,
+        "max": 10.09596220892854
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "auth": "api",
+      "responses": 20,
+      "correct": 18,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 379,
+        "median": 379.0,
+        "min": 379,
+        "max": 379
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 314.5,
+        "median": 282.5,
+        "min": 181,
+        "max": 559
+      },
+      "reasoning_tokens": {
+        "mean": 290.5,
+        "median": 258.5,
+        "min": 157,
+        "max": 535
+      },
+      "total_tokens": {
+        "mean": 693.5,
+        "median": 661.5,
+        "min": 560,
+        "max": 938
+      },
+      "seconds": {
+        "mean": 5.408100204134826,
+        "median": 5.197783187497407,
+        "min": 3.5588474579853937,
+        "max": 8.394000208936632
+      },
+      "first_text_seconds": {
+        "mean": 5.22220203129109,
+        "median": 5.023037208477035,
+        "min": 3.439171041944064,
+        "max": 8.243955084006302
+      },
+      "wire_seconds": {
+        "mean": 5.085618535388494,
+        "median": 4.871444999997038,
+        "min": 3.1414256669813767,
+        "max": 8.05071424995549
+      },
+      "wire_first_text_seconds": {
+        "mean": 4.900014724978246,
+        "median": 4.696748270478565,
+        "min": 3.0215316669782624,
+        "max": 7.9009700829628855
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "auth": "chatgpt",
+      "responses": 20,
+      "correct": 19,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 379,
+        "median": 379.0,
+        "min": 379,
+        "max": 379
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 250.7,
+        "median": 229.5,
+        "min": 189,
+        "max": 330
+      },
+      "reasoning_tokens": {
+        "mean": 226.8,
+        "median": 205.5,
+        "min": 165,
+        "max": 306
+      },
+      "total_tokens": {
+        "mean": 629.7,
+        "median": 608.5,
+        "min": 568,
+        "max": 709
+      },
+      "seconds": {
+        "mean": 6.337031535455026,
+        "median": 6.304082521004602,
+        "min": 5.432206833967939,
+        "max": 7.649579750024714
+      },
+      "first_text_seconds": {
+        "mean": 5.9618882688344454,
+        "median": 5.950059000460897,
+        "min": 4.851863749907352,
+        "max": 7.388426334015094
+      },
+      "wire_seconds": {
+        "mean": 5.6020251167065,
+        "median": 5.512921583955176,
+        "min": 4.733090333058499,
+        "max": 6.944630792015232
+      },
+      "wire_first_text_seconds": {
+        "mean": 5.227626837504795,
+        "median": 5.202107604534831,
+        "min": 4.154134707991034,
+        "max": 6.683960207970813
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "auth": "api",
+      "responses": 20,
+      "correct": 17,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 379,
+        "median": 379.0,
+        "min": 379,
+        "max": 379
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 335.3,
+        "median": 304.5,
+        "min": 237,
+        "max": 653
+      },
+      "reasoning_tokens": {
+        "mean": 311.4,
+        "median": 280.5,
+        "min": 213,
+        "max": 629
+      },
+      "total_tokens": {
+        "mean": 714.3,
+        "median": 683.5,
+        "min": 616,
+        "max": 1032
+      },
+      "seconds": {
+        "mean": 5.249182633549208,
+        "median": 4.78568433347391,
+        "min": 4.142401874996722,
+        "max": 9.265966209000908
+      },
+      "first_text_seconds": {
+        "mean": 5.099617070984095,
+        "median": 4.645877167000435,
+        "min": 3.9866356659913436,
+        "max": 9.137533125001937
+      },
+      "wire_seconds": {
+        "mean": 4.879091950046131,
+        "median": 4.408801916462835,
+        "min": 3.750821791938506,
+        "max": 9.005820084013976
+      },
+      "wire_first_text_seconds": {
+        "mean": 4.729933843755862,
+        "median": 4.248674186994322,
+        "min": 3.5955227919621393,
+        "max": 8.877649375004694
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "auth": "chatgpt",
+      "responses": 20,
+      "correct": 17,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 379,
+        "median": 379.0,
+        "min": 379,
+        "max": 379
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 290.9,
+        "median": 287.0,
+        "min": 208,
+        "max": 400
+      },
+      "reasoning_tokens": {
+        "mean": 267,
+        "median": 263.0,
+        "min": 186,
+        "max": 376
+      },
+      "total_tokens": {
+        "mean": 669.9,
+        "median": 666.0,
+        "min": 587,
+        "max": 779
+      },
+      "seconds": {
+        "mean": 8.005122400040273,
+        "median": 7.53331997897476,
+        "min": 6.237503750016913,
+        "max": 13.117591292015277
+      },
+      "first_text_seconds": {
+        "mean": 7.4887005604978185,
+        "median": 7.1702913959743455,
+        "min": 5.844898874987848,
+        "max": 11.730691417003982
+      },
+      "wire_seconds": {
+        "mean": 7.204521314648446,
+        "median": 6.66795752098551,
+        "min": 5.540929124923423,
+        "max": 12.106851958087645
+      },
+      "wire_first_text_seconds": {
+        "mean": 6.68898194154608,
+        "median": 6.349213729030453,
+        "min": 5.14853924990166,
+        "max": 10.721870958106592
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "auth": "api",
+      "responses": 20,
+      "correct": 19,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 379,
+        "median": 379.0,
+        "min": 379,
+        "max": 379
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 129.8,
+        "median": 127.0,
+        "min": 112,
+        "max": 152
+      },
+      "reasoning_tokens": {
+        "mean": 105.8,
+        "median": 103.0,
+        "min": 88,
+        "max": 128
+      },
+      "total_tokens": {
+        "mean": 508.8,
+        "median": 506.0,
+        "min": 491,
+        "max": 531
+      },
+      "seconds": {
+        "mean": 4.838538247905672,
+        "median": 4.553487166529521,
+        "min": 3.761242000036873,
+        "max": 6.703192624961957
+      },
+      "first_text_seconds": {
+        "mean": 4.589105685299728,
+        "median": 4.3420528954593465,
+        "min": 3.5198278330499306,
+        "max": 6.487681375001557
+      },
+      "wire_seconds": {
+        "mean": 4.4649366769474,
+        "median": 4.270673229009844,
+        "min": 3.4211292499676347,
+        "max": 6.325607917038724
+      },
+      "wire_first_text_seconds": {
+        "mean": 4.216101320710732,
+        "median": 4.050235332921147,
+        "min": 3.17983420798555,
+        "max": 6.031594916945323
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "auth": "chatgpt",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 379,
+        "median": 379.0,
+        "min": 379,
+        "max": 379
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 124.75,
+        "median": 124.0,
+        "min": 112,
+        "max": 141
+      },
+      "reasoning_tokens": {
+        "mean": 100.75,
+        "median": 100.0,
+        "min": 88,
+        "max": 117
+      },
+      "total_tokens": {
+        "mean": 503.75,
+        "median": 503.0,
+        "min": 491,
+        "max": 520
+      },
+      "seconds": {
+        "mean": 6.96549510830082,
+        "median": 6.643669771030545,
+        "min": 5.688055332982913,
+        "max": 10.30170441698283
+      },
+      "first_text_seconds": {
+        "mean": 6.630085643811617,
+        "median": 6.277904166490771,
+        "min": 5.406717999954708,
+        "max": 9.928002750035375
+      },
+      "wire_seconds": {
+        "mean": 6.054541241697734,
+        "median": 5.941141979012173,
+        "min": 4.791489124996588,
+        "max": 8.072363374987617
+      },
+      "wire_first_text_seconds": {
+        "mean": 5.720055712602334,
+        "median": 5.5653994790045545,
+        "min": 4.509418834000826,
+        "max": 8.062196500017308
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "auth": "api",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 379,
+        "median": 379.0,
+        "min": 379,
+        "max": 379
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 136.25,
+        "median": 134.5,
+        "min": 114,
+        "max": 160
+      },
+      "reasoning_tokens": {
+        "mean": 112.25,
+        "median": 110.5,
+        "min": 90,
+        "max": 136
+      },
+      "total_tokens": {
+        "mean": 515.25,
+        "median": 513.5,
+        "min": 493,
+        "max": 539
+      },
+      "seconds": {
+        "mean": 5.0875493730069135,
+        "median": 5.090716729057021,
+        "min": 4.086353791994043,
+        "max": 6.461895334068686
+      },
+      "first_text_seconds": {
+        "mean": 4.82715824584011,
+        "median": 4.757994499523193,
+        "min": 3.833189541939646,
+        "max": 6.208232750068419
+      },
+      "wire_seconds": {
+        "mean": 4.680576779082185,
+        "median": 4.64720672898693,
+        "min": 3.749787834007293,
+        "max": 6.171021165908314
+      },
+      "wire_first_text_seconds": {
+        "mean": 4.420910895639099,
+        "median": 4.399634291476104,
+        "min": 3.4974976249504834,
+        "max": 5.916923083015718
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "auth": "chatgpt",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 379,
+        "median": 379.0,
+        "min": 379,
+        "max": 379
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 135.35,
+        "median": 137.5,
+        "min": 122,
+        "max": 147
+      },
+      "reasoning_tokens": {
+        "mean": 111.35,
+        "median": 113.5,
+        "min": 98,
+        "max": 123
+      },
+      "total_tokens": {
+        "mean": 514.35,
+        "median": 516.5,
+        "min": 501,
+        "max": 526
+      },
+      "seconds": {
+        "mean": 6.727182652300689,
+        "median": 6.654553167056292,
+        "min": 5.3022389999823645,
+        "max": 9.382197875063866
+      },
+      "first_text_seconds": {
+        "mean": 6.339389721007319,
+        "median": 6.2005533540504985,
+        "min": 5.087251250050031,
+        "max": 9.002001417102292
+      },
+      "wire_seconds": {
+        "mean": 5.998648091638461,
+        "median": 5.881379562488291,
+        "min": 4.634459750028327,
+        "max": 8.736523291910999
+      },
+      "wire_first_text_seconds": {
+        "mean": 5.611517777055269,
+        "median": 5.436417646007612,
+        "min": 4.420280750025995,
+        "max": 8.357008666964248
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "auth": "api",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 379,
+        "median": 379.0,
+        "min": 379,
+        "max": 379
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 159.95,
+        "median": 158.5,
+        "min": 131,
+        "max": 192
+      },
+      "reasoning_tokens": {
+        "mean": 135.95,
+        "median": 134.5,
+        "min": 107,
+        "max": 168
+      },
+      "total_tokens": {
+        "mean": 538.95,
+        "median": 537.5,
+        "min": 510,
+        "max": 571
+      },
+      "seconds": {
+        "mean": 5.428280200087466,
+        "median": 5.34397516696481,
+        "min": 4.16624283301644,
+        "max": 6.622854041052051
+      },
+      "first_text_seconds": {
+        "mean": 5.171846827049739,
+        "median": 5.101192979491316,
+        "min": 3.908020833041519,
+        "max": 6.337605040986091
+      },
+      "wire_seconds": {
+        "mean": 5.058185079105897,
+        "median": 5.051266270456836,
+        "min": 3.83831495908089,
+        "max": 6.041596625000238
+      },
+      "wire_first_text_seconds": {
+        "mean": 4.802303720754571,
+        "median": 4.809814916457981,
+        "min": 3.580371333984658,
+        "max": 5.770772707997821
+      }
+    },
+    {
+      "task": "portfolio",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "auth": "chatgpt",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 379,
+        "median": 379.0,
+        "min": 379,
+        "max": 379
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 154.95,
+        "median": 156.0,
+        "min": 131,
+        "max": 193
+      },
+      "reasoning_tokens": {
+        "mean": 130.95,
+        "median": 132.0,
+        "min": 107,
+        "max": 169
+      },
+      "total_tokens": {
+        "mean": 533.95,
+        "median": 535.0,
+        "min": 510,
+        "max": 572
+      },
+      "seconds": {
+        "mean": 7.775695875048404,
+        "median": 7.5824037290294655,
+        "min": 5.826604833011515,
+        "max": 11.579407874960452
+      },
+      "first_text_seconds": {
+        "mean": 7.2824892980395814,
+        "median": 7.154458437522408,
+        "min": 5.493328000069596,
+        "max": 11.375526375020854
+      },
+      "wire_seconds": {
+        "mean": 7.059546943788883,
+        "median": 6.903073854511604,
+        "min": 5.197516707936302,
+        "max": 10.762615749961697
+      },
+      "wire_first_text_seconds": {
+        "mean": 6.567036614491371,
+        "median": 6.482432437478565,
+        "min": 4.864400082966313,
+        "max": 10.562001290963963
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "auth": "api",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 437,
+        "median": 437.0,
+        "min": 437,
+        "max": 437
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 189.9,
+        "median": 190.0,
+        "min": 164,
+        "max": 219
+      },
+      "reasoning_tokens": {
+        "mean": 75.5,
+        "median": 78.0,
+        "min": 56,
+        "max": 106
+      },
+      "total_tokens": {
+        "mean": 626.9,
+        "median": 627.0,
+        "min": 601,
+        "max": 656
+      },
+      "seconds": {
+        "mean": 2.981081048102351,
+        "median": 2.9484851044835523,
+        "min": 2.5567046670475975,
+        "max": 3.382420458015986
+      },
+      "first_text_seconds": {
+        "mean": 1.8864071938558482,
+        "median": 1.8809577914653346,
+        "min": 1.5328953340649605,
+        "max": 2.216470249928534
+      },
+      "wire_seconds": {
+        "mean": 2.6540288479067384,
+        "median": 2.638311061949935,
+        "min": 2.2292105000233278,
+        "max": 3.0628598750336096
+      },
+      "wire_first_text_seconds": {
+        "mean": 1.5601572625106201,
+        "median": 1.5554102914757095,
+        "min": 1.1914303340017796,
+        "max": 1.9106330419890583
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "auth": "chatgpt",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 20,
+      "input_tokens": {
+        "mean": 437,
+        "median": 437.0,
+        "min": 437,
+        "max": 437
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 114.5,
+        "median": 113.5,
+        "min": 105,
+        "max": 132
+      },
+      "reasoning_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "total_tokens": {
+        "mean": 551.5,
+        "median": 550.5,
+        "min": 542,
+        "max": 569
+      },
+      "seconds": {
+        "mean": 3.98686348128831,
+        "median": 3.845114250027109,
+        "min": 3.420196249964647,
+        "max": 6.7637406249996275
+      },
+      "first_text_seconds": {
+        "mean": 1.735806368739577,
+        "median": 1.6473257499746978,
+        "min": 1.477073041955009,
+        "max": 2.6306622499832883
+      },
+      "wire_seconds": {
+        "mean": 3.2449769771599675,
+        "median": 3.109320875024423,
+        "min": 2.7160620420472696,
+        "max": 6.0448614589404315
+      },
+      "wire_first_text_seconds": {
+        "mean": 0.9942926396441181,
+        "median": 0.9046875829226337,
+        "min": 0.7707579999696463,
+        "max": 1.9126634169369936
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "auth": "api",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 437,
+        "median": 437.0,
+        "min": 437,
+        "max": 437
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 213.3,
+        "median": 210.5,
+        "min": 159,
+        "max": 283
+      },
+      "reasoning_tokens": {
+        "mean": 99.05,
+        "median": 96.0,
+        "min": 58,
+        "max": 165
+      },
+      "total_tokens": {
+        "mean": 650.3,
+        "median": 647.5,
+        "min": 596,
+        "max": 720
+      },
+      "seconds": {
+        "mean": 5.540649604180362,
+        "median": 3.3566078124567866,
+        "min": 2.6917612499091774,
+        "max": 46.692327167023905
+      },
+      "first_text_seconds": {
+        "mean": 4.429159318748861,
+        "median": 2.222341792017687,
+        "min": 1.5837364579783753,
+        "max": 45.67858983401675
+      },
+      "wire_seconds": {
+        "mean": 5.058926245901967,
+        "median": 2.963105208997149,
+        "min": 2.408846791018732,
+        "max": 43.720162709010765
+      },
+      "wire_first_text_seconds": {
+        "mean": 3.948123093752656,
+        "median": 1.815834041510243,
+        "min": 1.300355707993731,
+        "max": 42.70599595899694
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "auth": "chatgpt",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 18,
+      "input_tokens": {
+        "mean": 437,
+        "median": 437.0,
+        "min": 437,
+        "max": 437
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 117.9,
+        "median": 111.0,
+        "min": 105,
+        "max": 182
+      },
+      "reasoning_tokens": {
+        "mean": 6.05,
+        "median": 0.0,
+        "min": 0,
+        "max": 67
+      },
+      "total_tokens": {
+        "mean": 554.9,
+        "median": 548.0,
+        "min": 542,
+        "max": 619
+      },
+      "seconds": {
+        "mean": 4.016325054195477,
+        "median": 3.8309069580282085,
+        "min": 3.3897135829320177,
+        "max": 4.9739807499572635
+      },
+      "first_text_seconds": {
+        "mean": 1.9240165021037683,
+        "median": 1.8266912500257604,
+        "min": 1.4303911249153316,
+        "max": 2.9575645830482244
+      },
+      "wire_seconds": {
+        "mean": 3.2726523958030156,
+        "median": 3.0683666045079008,
+        "min": 2.739602208021097,
+        "max": 4.306092791957781
+      },
+      "wire_first_text_seconds": {
+        "mean": 1.1809453292633407,
+        "median": 0.9798593960003927,
+        "min": 0.7757436670362949,
+        "max": 2.2902448340319097
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "auth": "api",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 437,
+        "median": 437.0,
+        "min": 437,
+        "max": 437
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 251.5,
+        "median": 252.5,
+        "min": 175,
+        "max": 359
+      },
+      "reasoning_tokens": {
+        "mean": 139.05,
+        "median": 138.0,
+        "min": 63,
+        "max": 248
+      },
+      "total_tokens": {
+        "mean": 688.5,
+        "median": 689.5,
+        "min": 612,
+        "max": 796
+      },
+      "seconds": {
+        "mean": 3.8514942102890926,
+        "median": 3.873905478976667,
+        "min": 2.919735624920577,
+        "max": 5.262171332957223
+      },
+      "first_text_seconds": {
+        "mean": 2.8231436665053478,
+        "median": 2.8155907079344615,
+        "min": 1.7163162080105394,
+        "max": 4.226646707975306
+      },
+      "wire_seconds": {
+        "mean": 3.461546318733599,
+        "median": 3.488566729007289,
+        "min": 2.622776584001258,
+        "max": 4.590753458091058
+      },
+      "wire_first_text_seconds": {
+        "mean": 2.433679322944954,
+        "median": 2.493334666476585,
+        "min": 1.417316082981415,
+        "max": 3.693374958005734
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "auth": "chatgpt",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 437,
+        "median": 437.0,
+        "min": 437,
+        "max": 437
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 199.2,
+        "median": 198.0,
+        "min": 167,
+        "max": 243
+      },
+      "reasoning_tokens": {
+        "mean": 83.2,
+        "median": 82.0,
+        "min": 59,
+        "max": 120
+      },
+      "total_tokens": {
+        "mean": 636.2,
+        "median": 635.0,
+        "min": 604,
+        "max": 680
+      },
+      "seconds": {
+        "mean": 5.487515533313854,
+        "median": 5.385380958556198,
+        "min": 4.379760000039823,
+        "max": 6.939964583027177
+      },
+      "first_text_seconds": {
+        "mean": 3.404300093551865,
+        "median": 3.267481562506873,
+        "min": 2.499911917024292,
+        "max": 4.378112124977633
+      },
+      "wire_seconds": {
+        "mean": 4.73895405420335,
+        "median": 4.6711940000532195,
+        "min": 3.6939844579901546,
+        "max": 6.153379165916704
+      },
+      "wire_first_text_seconds": {
+        "mean": 2.6563227500068023,
+        "median": 2.578618937463034,
+        "min": 1.8149860409321263,
+        "max": 3.614800334093161
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "auth": "api",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 20,
+      "input_tokens": {
+        "mean": 437,
+        "median": 437.0,
+        "min": 437,
+        "max": 437
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 125.95,
+        "median": 126.0,
+        "min": 112,
+        "max": 136
+      },
+      "reasoning_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "total_tokens": {
+        "mean": 562.95,
+        "median": 563.0,
+        "min": 549,
+        "max": 573
+      },
+      "seconds": {
+        "mean": 3.940374587458791,
+        "median": 3.951670812559314,
+        "min": 3.4124240840319544,
+        "max": 4.6685094590066
+      },
+      "first_text_seconds": {
+        "mean": 1.5738256437529343,
+        "median": 1.5214818335371092,
+        "min": 1.2110187079524621,
+        "max": 2.149527082918212
+      },
+      "wire_seconds": {
+        "mean": 3.586995862488402,
+        "median": 3.5133801454794593,
+        "min": 2.9971245829947293,
+        "max": 4.345004874980077
+      },
+      "wire_first_text_seconds": {
+        "mean": 1.221037075057393,
+        "median": 1.1962315624696203,
+        "min": 0.8648211660329252,
+        "max": 1.7974607920041308
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "auth": "chatgpt",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 20,
+      "input_tokens": {
+        "mean": 437,
+        "median": 437.0,
+        "min": 437,
+        "max": 437
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 123.65,
+        "median": 122.5,
+        "min": 115,
+        "max": 141
+      },
+      "reasoning_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "total_tokens": {
+        "mean": 560.65,
+        "median": 559.5,
+        "min": 552,
+        "max": 578
+      },
+      "seconds": {
+        "mean": 6.288751820795005,
+        "median": 5.792767520470079,
+        "min": 4.73764758289326,
+        "max": 14.406674500089139
+      },
+      "first_text_seconds": {
+        "mean": 2.677029470796697,
+        "median": 2.3819429370341823,
+        "min": 1.9328134169336408,
+        "max": 5.727351290988736
+      },
+      "wire_seconds": {
+        "mean": 5.532790508342441,
+        "median": 5.078478561947122,
+        "min": 4.052784083061852,
+        "max": 13.72009399998933
+      },
+      "wire_first_text_seconds": {
+        "mean": 1.9217288438579998,
+        "median": 1.576669687521644,
+        "min": 1.216799332993105,
+        "max": 5.041564334067516
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "auth": "api",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 19,
+      "input_tokens": {
+        "mean": 437,
+        "median": 437.0,
+        "min": 437,
+        "max": 437
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 123.05,
+        "median": 120.0,
+        "min": 109,
+        "max": 190
+      },
+      "reasoning_tokens": {
+        "mean": 3.05,
+        "median": 0.0,
+        "min": 0,
+        "max": 61
+      },
+      "total_tokens": {
+        "mean": 560.05,
+        "median": 557.0,
+        "min": 546,
+        "max": 627
+      },
+      "seconds": {
+        "mean": 4.32396032079123,
+        "median": 4.1024935625027865,
+        "min": 3.7308362500043586,
+        "max": 5.915655167074874
+      },
+      "first_text_seconds": {
+        "mean": 1.9699167146522085,
+        "median": 1.7587363544735126,
+        "min": 1.250723790959455,
+        "max": 3.7397514999611303
+      },
+      "wire_seconds": {
+        "mean": 3.995932599907974,
+        "median": 3.771328562463168,
+        "min": 3.4109347499907017,
+        "max": 5.466162250027992
+      },
+      "wire_first_text_seconds": {
+        "mean": 1.642280314565869,
+        "median": 1.395662437484134,
+        "min": 0.9574840420391411,
+        "max": 3.4180900410283357
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "auth": "chatgpt",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 20,
+      "input_tokens": {
+        "mean": 437,
+        "median": 437.0,
+        "min": 437,
+        "max": 437
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 121.8,
+        "median": 121.5,
+        "min": 108,
+        "max": 131
+      },
+      "reasoning_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "total_tokens": {
+        "mean": 558.8,
+        "median": 558.5,
+        "min": 545,
+        "max": 568
+      },
+      "seconds": {
+        "mean": 6.212761433387641,
+        "median": 5.843134687456768,
+        "min": 4.870608250028454,
+        "max": 10.576136874966323
+      },
+      "first_text_seconds": {
+        "mean": 2.840299264510395,
+        "median": 2.4559406039770693,
+        "min": 1.9654793749796227,
+        "max": 6.270263624959625
+      },
+      "wire_seconds": {
+        "mean": 5.4589913563046135,
+        "median": 5.050686603994109,
+        "min": 4.202441042056307,
+        "max": 9.845092125004157
+      },
+      "wire_first_text_seconds": {
+        "mean": 2.0869579834048637,
+        "median": 1.718251146026887,
+        "min": 1.2789290000218898,
+        "max": 5.539666875032708
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "auth": "api",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 0,
+      "input_tokens": {
+        "mean": 437,
+        "median": 437.0,
+        "min": 437,
+        "max": 437
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 346.6,
+        "median": 336.0,
+        "min": 285,
+        "max": 506
+      },
+      "reasoning_tokens": {
+        "mean": 226.75,
+        "median": 219.0,
+        "min": 170,
+        "max": 377
+      },
+      "total_tokens": {
+        "mean": 783.6,
+        "median": 773.0,
+        "min": 722,
+        "max": 943
+      },
+      "seconds": {
+        "mean": 9.41519861459965,
+        "median": 9.2741932705394,
+        "min": 7.37770316703245,
+        "max": 12.991707332897931
+      },
+      "first_text_seconds": {
+        "mean": 7.346730754163582,
+        "median": 7.355135229008738,
+        "min": 5.538601625012234,
+        "max": 10.617215082980692
+      },
+      "wire_seconds": {
+        "mean": 9.073771347955335,
+        "median": 8.96896425000159,
+        "min": 7.042644124943763,
+        "max": 12.704234624980018
+      },
+      "wire_first_text_seconds": {
+        "mean": 7.005910822987789,
+        "median": 7.039606562466361,
+        "min": 5.203978708945215,
+        "max": 10.330068708979525
+      }
+    },
+    {
+      "task": "bookstore",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "auth": "chatgpt",
+      "responses": 20,
+      "correct": 20,
+      "zero_reasoning": 2,
+      "input_tokens": {
+        "mean": 437,
+        "median": 437.0,
+        "min": 437,
+        "max": 437
+      },
+      "cached_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "cache_write_input_tokens": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "output_tokens": {
+        "mean": 254.2,
+        "median": 274.0,
+        "min": 117,
+        "max": 365
+      },
+      "reasoning_tokens": {
+        "mean": 135.25,
+        "median": 148.0,
+        "min": 0,
+        "max": 246
+      },
+      "total_tokens": {
+        "mean": 691.2,
+        "median": 711.0,
+        "min": 554,
+        "max": 802
+      },
+      "seconds": {
+        "mean": 10.424032325000734,
+        "median": 10.90384904149687,
+        "min": 6.218556249979883,
+        "max": 13.07670400000643
+      },
+      "first_text_seconds": {
+        "mean": 7.478073383355513,
+        "median": 7.955691333510913,
+        "min": 2.6696972920326516,
+        "max": 10.283889207988977
+      },
+      "wire_seconds": {
+        "mean": 9.669878731132485,
+        "median": 10.191913874470629,
+        "min": 5.358887540991418,
+        "max": 12.35386687493883
+      },
+      "wire_first_text_seconds": {
+        "mean": 6.72442152503063,
+        "median": 7.207512687542476,
+        "min": 1.8098740000277758,
+        "max": 9.560643375036307
+      }
+    }
+  ]
+}
